@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Upload to JFrog') {
       steps {
-        sh 'curl -X PUT -u admin:AP8UM6UyW1i4xpPQceU7t8dyT6Y -T web/build/libs/web.war "http://34.215.7.154:8081/artifactory/example-repo-local/web.war"'
+        sh 'curl -X PUT -u admin:AP8UM6UyW1i4xpPQceU7t8dyT6Y -T web/build/libs/web.war "http://52.42.249.222:8081/artifactory/example-repo-local/web.war"'
       }
     }
   }
