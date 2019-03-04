@@ -13,7 +13,7 @@ pipeline {
     } 
     stage('deploy') {
       steps {
-        sh "sudo cp build/libs/web.war /opt/tomcat8/apache-tomcat-8.5.37/webapps/"
+        sh "cp build/libs/web.war /opt/tomcat8/apache-tomcat-8.5.37/webapps/"
       }
     }
   }
