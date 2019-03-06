@@ -7,7 +7,7 @@ RUN apt-get update && apt-get -y upgrade
 
 WORKDIR /usr/local/tomcat
 
-RUN cp web/build/libs/web.war /usr/local/tomcat/webapps/
+cp web/build/libs/web.war /usr/local/tomcat/webapps/
 
 EXPOSE 9001
 
