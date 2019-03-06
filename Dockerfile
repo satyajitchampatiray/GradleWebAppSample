@@ -1,6 +1,10 @@
 
-FROM tomcat:8.0
+FROM tomcat
 
-COPY web/build/libs/web.war /usr/local/tomcat/webapps
+MAINTAINER Satyajit Champatiray
+RUN sudo apt-get update && apt-get -y upgrade
+WORKDIR /usr/local/tomcat
 
-CMD 
+RUN CP web/
+EXPOSE 8080
+CMD ["catalina.sh", "start"]
