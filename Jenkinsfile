@@ -11,7 +11,7 @@ pipeline {
         sh "gradle build"
       }
     }
-    stage('Run Docker Image') {
+    stage('Build Docker Image') {
       steps {
         sh "docker image build -t tomcat-docker .
       }
