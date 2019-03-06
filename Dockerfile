@@ -9,6 +9,6 @@ WORKDIR /usr/local/tomcat
 
 copy web/build/libs/web.war /usr/local/tomcat/webapps/
 
-EXPOSE 9001
+EXPOSE 8081
 
 CMD ["catalina.sh", "start"]
