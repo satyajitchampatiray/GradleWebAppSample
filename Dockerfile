@@ -3,7 +3,7 @@ FROM tomcat
 
 MAINTAINER Satyajit Champatiray
 
-RUN sudo apt-get update && apt-get -y upgrade
+RUN apt-get update && apt-get -y upgrade
 
 WORKDIR /usr/local/tomcat
 
