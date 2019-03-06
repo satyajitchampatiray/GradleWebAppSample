@@ -20,5 +20,6 @@ pipeline {
       steps {
         sh "docker container run -d -p 8081:8081 -v /var/run/docker.sock:/var/run/docker.sock tomcat-docker"
       }
+    }
   }
 }
