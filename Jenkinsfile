@@ -11,14 +11,14 @@ pipeline {
         sh "gradle build"
       }
     }
-    stage('Build Docker Image') {
+    stage('Run Docker Image') {
       steps {
-        
+        sh "docker image build -t tomcat-docker .
       }
-    }
-    stage('Run the docker image') {
+    } 
+    stage('Run the Container') {
       steps {
+        sh "docker container run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock tomcat-docker"
       }
-    }
   }
 }
