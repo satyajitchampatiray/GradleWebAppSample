@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        sh "docker image build -t tomcat-docker .
+        sh "docker image build -t tomcat-docker ."
       }
     } 
     stage('Run the Container') {
