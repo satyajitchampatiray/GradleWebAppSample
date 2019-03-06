@@ -12,4 +12,4 @@ copy web/build/libs/web.war /usr/local/tomcat/webapps/
 EXPOSE 8082
 
 CMD ["catalina.sh", "start"]
-CMD tail -f /dev/null
+CMD sleep inf
