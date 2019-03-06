@@ -10,6 +10,15 @@ pipeline {
       steps {
         sh "gradle build"
       }
-    }   
+    }
+    stage('Build Docker Image') {
+      steps {
+        
+      }
+    }
+    stage('Run the docker image') {
+      steps {
+      }
+    }
   }
 }
